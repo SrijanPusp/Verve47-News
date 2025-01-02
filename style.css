@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary_text_color: #000000;
+  --secondar_text_color: #4a0186;
+  --accent_color: #e6f14e;
+  --accent_color_dark: #6d5700;
+}
+
+body{
+  font-family: "Rubik", Courier, monospace;
+  color: var(--primary_text_color);
+}
+
+p{
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--secondar_text_color);
+  line-height: 1.4rem;
+}
+
+a{
+  font-style: none;
+}
+
+ul{
+  list-style: none;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+.container{
+  max-width: 1180px;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+nav{
+  background-color: #fcf7ac;
+  box-shadow: 0, 0, 4px #e8d900cc;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  height: 90px;
+}
+
+.main_nav{
+  justify-content: space-between;
+  padding-block: 8px;
+}
+
+.logo{
+  height: 100px;
+}
+
+.nav_links ul{
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.nav_items.active{
+  color: rgb(178, 0, 0);
+}
+
+.hover_link{
+  cursor: pointer;
+}
+
+.hover_link:hover{
+  color: var(--accent_color_dark);
+}
+
+.hover_link:active{
+  color: rgb(255, 216, 41);
+}
+
+.search_bar{
+  height: 32px;
+  margin-bottom: 25px;
+  gap: 8px;
+}
+
+.search_input{
+  width: 200px;
+  height: 100%;
+  padding-inline: 12px;
+  border-radius: 4px;
+  border: 3px solid whitesmoke;
+  cursor: pointer;
+}
+
+.search:hover{
+  color: var(--accent_color_dark);
+}
+
+main {
+  padding-block: 20px;
+  margin-top: 100px;
+}
+
+.cards_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .cards_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  width: 300px;
+  height: 360px;
+  box-shadow: 0 0 15px #fff1d4;
+  border-radius: 9px;
+  border-color: #2f018617;
+  border-style: solid;
+  cursor: pointer;
+  background-color: #fff;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card:hover{
+  box-shadow: 2px 2px 19px #fff1d4;
+  background-color: #d9e8eb73;
+  transform: translateY(-3px);
+}
+
+.card_header img{
+  width: 100%;
+  height: "auto";
+  object-fit: cover;
+}
+
+.card_content{
+  padding: 12px;
+}
+
+.news_source{
+  margin-block: 12px;
+}
