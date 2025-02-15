@@ -27,10 +27,10 @@ Through this project, I learned about:
 ## Screenshots
 
 ### Home Page
-![Verve47 Home Page](\assets\Screenshot%2025-02-15%190352.png)
+![Verve47 Home Page](assets\Screenshot%2025-02-15%190352.png)
 
 ### Search Functionality in Action
-![Search Functionality](\assets\Screenshot%202025-02-15%20190352.png)
+![Search Functionality](assets\Screenshot%202025-02-15%20190352.png)
 
 ## How to Run Locally
 
@@ -47,7 +47,7 @@ Through this project, I learned about:
 ## Deployment
 
 The project is deployed on Vercel. You can access it live at:
-[Verve47 News](https://verve47-news.vercel.app)
+[Verve47 News](https://verve47.vercel.app/)
 
 ## Contributions
 
